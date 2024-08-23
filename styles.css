@@ -11,51 +11,55 @@
 
 
 /* General */
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
-html,body{
+html,
+body {
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #ff7d3f, #ffa561,#fede91);
+    background: linear-gradient(to right, #ff7d3f, #ffa561, #fede91);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
- /* Navegaciom */
-#content{
+/* Navegaciom */
+#content {
     width: 90%;
-    min-height:550px ;
-    background: linear-gradient(to left, #e92d20 0%,#f1392d 50%,#e62c20 100%);   
+    min-height: 550px;
+    background: linear-gradient(to left,
+    #e92d20 0%, #f1392d 50%, #e62c20 100%);
+    box-shadow: 5px 5px 9px #333;
 }
+    
 
-#header{
+#header {
     display: flex;
     flex-direction: row;
 }
 
-#header #logo{
+#header #logo {
     flex-grow: 2;
     flex-basis: 80%;
 }
 
-#header img{
+#header img {
     width: 150px;
 }
 
-#nav{
+#nav {
     flex-wrap: wrap;
-    flex-grow: 1 ;
+    flex-grow: 1;
     flex-basis: 25%;
     margin-right: 20px;
 }
 
 #nav ul {
-    display: flex ;
+    display: flex;
     height: 100%;
     flex-direction: row;
     list-style: none;
@@ -65,7 +69,7 @@ html,body{
 
 }
 
-#nav ul li a{
+#nav ul li a {
     display: block;
     list-style: none;
     text-decoration: none;
@@ -75,42 +79,45 @@ html,body{
     transition: all 300ms;
 }
 
-#nav > ul >li> a:hover{
+#nav>ul>li>a:hover {
     text-shadow: 0px 0px 3px wheat;
     transform: scale(1.2);
 }
 
 /* Articles */
 
-#wrap{
+#wrap {
     display: flex;
     flex-direction: row;
 }
 
-#info{
+#info {
     flex-wrap: wrap;
-    flex-grow: 1 ;
+    flex-grow: 1;
     flex-basis: 20%;
     height: auto;
     margin-top: 40px;
     margin-left: 80px;
 }
-#info p{
+
+#info p {
     text-align: justify;
     font-family: sans-serif;
     color: white;
 }
 
-#info #p1,#p2{
-    font-size: 70px;
+#info #p1,
+#p2 {
+    font-size: 60px;
 }
 
-#p3{
+#p3 {
     width: 80%;
     margin-top: 20px;
+    font-size: 15px;
 }
 
-#info input[type = "button"]{
+#info input[type="button"] {
     width: 150px;
     height: 50px;
     margin-top: 30px;
@@ -120,37 +127,38 @@ html,body{
     cursor: pointer;
 
 }
-#info input[type = "button"]:active{
-    border: 1px solid #333;
+
+#info input[type="button"]:active {
+   background-color: #333;
+   color: wheat;
     transform: scale(0.98);
-    
+
 }
 
-#article{
+#article {
     flex-basis: 40%;
     margin-right: 70px;
 }
 
 
-#article img{
+#article img {
     cursor: pointer;
-    width: 100%;
+    width: 400px;
 }
 
 /* Footer */
-#footer{
+#footer {
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 1 ;
+    flex-grow: 1;
     flex-basis: 30%;
     margin-left: 80px;
-    margin-top: -10px;
     padding-bottom: 10px;
 
 }
 
-.icon a{
-    font-family:"wedsymbolsRegular";
+.icon a {
+    font-family: "wedsymbolsRegular";
     font-size: 25px;
     color: white;
     margin-left: 10px;
@@ -159,10 +167,10 @@ html,body{
     cursor: pointer;
 }
 
-.icon:hover{
+.icon:hover {
     transform: translateY(-15%);
 }
 
-.icon a:focus{
+.icon a:focus {
     color: #333;
 }
